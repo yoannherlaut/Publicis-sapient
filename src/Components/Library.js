@@ -134,7 +134,7 @@ const Library = (props) => {
               onInputChange={(e, newInputValue) => setBooksFiltered(newInputValue)}
               options={Books}
               getOptionLabel={(option) => option.title}
-              renderInput={(params) => <TextField {...params} onChange={(e) => setBooksFiltered(e.target.value)} label="Search ..." variant="outlined" />}
+              renderInput={(params) => <TextField {...params} onChange={(e) => setBooksFiltered(e.target.value)} placeholder="Search ..." variant="outlined" />}
             />
           </Grid>
         </Grid>
